@@ -1,5 +1,7 @@
 .idea/
 .gitignore
+./gitignore
 .chef/
 .kitchen/
 .kitchen.local.yml
+gitex.py
