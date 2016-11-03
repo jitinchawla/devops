@@ -8,19 +8,14 @@ provisioner:
   require_chef_omnibus: true
 
 platforms:
-  - name: centos6
+  - name: centos
     driver_config:
-      image: centos:6.8.1
+      #image: centos:6.8.1
       platform: centos
-
-  # - name: centos-7.2
-  #   driver_config:
-  #     image: centos:7.2
-  #     platform: centos
 
 suites:
   - name: default
     run_list:
-      - recipe[httpd::default]
+      # - recipe[httpd::default]
       # - role[web]
     attributes:
